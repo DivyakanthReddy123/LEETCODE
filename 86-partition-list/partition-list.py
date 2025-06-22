@@ -25,7 +25,7 @@ class Solution(object):
                 list2 = list2.next 
             curr1 =curr1.next    
 
-        list2.next = None 
+        list2.next = None # marking as the end of the final linkedlist also 
         list1.next =  dummy2.next# i dont know how to add head of the list2 linkedlist here ? ?
         
         return dummy.next 
