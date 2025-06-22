@@ -10,7 +10,8 @@ class Solution(object):
         curr = dummy
         pos = 0
 
-        # this is to assign the prev before entering the internal linkedlist 
+        # this is to assign the lRem before entering the internal linkedlist 
+        # we stop curr right before the start internal linkedlist 
         while pos < left - 1 :
             curr = curr.next 
             pos += 1 
