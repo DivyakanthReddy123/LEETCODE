@@ -7,7 +7,7 @@ class Solution(object):
             return nums[0]
 
         currSum = 0 
-        maxSum = nums[0]
+        maxSum = float('-inf')
 
         for num in nums :
             # currSum += num # this line should be below the if statement 
