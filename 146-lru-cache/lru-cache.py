@@ -1,15 +1,10 @@
 
-    # we use Ordered Dictionary for special features 
 
-        # 3 cases here .. 
-        # 1 -> if it exists move to the end for mostly recently  used !! and then update it  
-        # 2 -> if not in cache then add it 
-        # 3 -> if the capacity exceeds then remove the least recently used 
-        # using the .popitem
       
 from collections import OrderedDict
 
 class LRUCache:
+    # we use Ordered Dictionary for special features 
 
     def __init__(self, capacity: int):
         self.cache = OrderedDict()
@@ -22,6 +17,11 @@ class LRUCache:
             return self.cache[key]
         return -1
 
+        # 3 cases here .. 
+        # 1 -> if it exists move to the end for mostly recently  used !! and then update it  
+        # 2 -> if not in cache then add it 
+        # 3 -> if the capacity exceeds then remove the least recently used 
+        # using the .popitem
     def put(self, key: int, value: int) -> None:
         if key in self.cache:
             # Mark as recently used
